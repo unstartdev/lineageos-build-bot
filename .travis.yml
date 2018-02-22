@@ -4,7 +4,7 @@ android:
       - platform-tools
 
 jdk:
-   - openjdk-8-jdk
+   - openjdk8
 
 beforce_install:
    - sudo apt-get -qq update
