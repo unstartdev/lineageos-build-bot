@@ -13,12 +13,11 @@ beforce_install:
    - mkdir -p ~/android/lineage
    - curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
    - chmod a+x ~/bin/repo
-   - if [ -d "$HOME/bin" ] ; then PATH="$HOME/bin:$PATH" fi
    - cd ~/android/lineage
    - repo init -u https://github.com/LineageOS/android.git -b cm-14.1
 
 install:
-   - repo sync
+   - ~/bin/repo sync
    - source build/envsetup.sh
    - breakfast wt88047
    - ./extract-files.sh
