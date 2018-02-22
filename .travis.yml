@@ -17,7 +17,7 @@ before_install:
    - yes | ~/bin/repo init -u https://github.com/LineageOS/android.git -b cm-14.1 >> /dev/null
 
 install:
-   - ~/bin/repo sync
+   - ~/bin/repo sync >> /dev/null
    - source build/envsetup.sh
    - breakfast wt88047
    - ./extract-files.sh
