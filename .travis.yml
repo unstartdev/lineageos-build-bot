@@ -14,7 +14,7 @@ before_install:
    - curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
    - chmod a+x ~/bin/repo
    - cd ~/android/lineage
-   - ~/bin/repo init -u https://github.com/LineageOS/android.git -b cm-14.1
+   - ~/bin/repo init -uy https://github.com/LineageOS/android.git -b cm-14.1
 
 install:
    - ~/bin/repo sync
